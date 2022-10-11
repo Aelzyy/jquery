@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Coba Javascript</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            h2{
+                margin: 0;
+            }
+            p#demo {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Menentukan Bilangan Ganjil Genap</h2>
+        <br >
+        <!-- Penginputan Bilangan yang akan Dicek -->
+        <p>Bilangan <input type="number" id="myNumber"> <button onclick="cekGanjilGenap()">Iyahh</button></p>
+        <p id="bilangan"></p>
+        <script>
+            //Penghitungan dan Pengecekan Hasil 
+            function cekGanjilGenap(){
+                var bilangan = document.getElementById("myNumber").value
+                if(bilangan % 2 == 0)
+                    document.getElementById("bilangan").innerText = "Bilangan Genap"
+                else
+                    document.getElementById("bilangan").innerText = "Bilangan Ganjil"
+            }
+        </script>
+        
+    </body>
+</html>
